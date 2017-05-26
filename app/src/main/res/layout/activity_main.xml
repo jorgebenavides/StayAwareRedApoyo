@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="urrutia.benavides.jorge.stayawareredapoyo.MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:text="BIENVENIDO"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="64dp" />
+
+    <Button
+        android:id="@+id/btnregistrarMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="registrar"
+        tools:layout_editor_absoluteX="198dp"
+        tools:layout_editor_absoluteY="300dp"
+        android:layout_marginEnd="46dp"
+        android:layout_alignBaseline="@+id/btningresarMain"
+        android:layout_alignBottom="@+id/btningresarMain"
+        android:layout_alignEnd="@+id/Clave" />
+
+    <Button
+        android:id="@+id/btningresarMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ingresar"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="300dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="56dp"
+        android:layout_below="@+id/Clave"
+        android:layout_alignStart="@+id/Clave" />
+
+    <EditText
+        android:id="@+id/Correo"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Correo"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="138dp"
+        android:layout_marginTop="77dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/Clave"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="214dp"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/Correo"
+        android:layout_alignStart="@+id/Correo" />
+</RelativeLayout>
